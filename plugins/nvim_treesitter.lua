@@ -1,0 +1,30 @@
+return {
+  mode = "extend",
+  options = {
+    builtin_configs = {
+      ensure_installed = {
+        "astro",
+        "comment",
+        "css",
+        "dockerfile",
+        "go",
+        "gomod",
+        "gosum",
+        "gowork",
+        "hcl",
+        "html",
+        "java",
+        "javascript",
+        "lua",
+        "markdown_inline",
+        "markdown",
+        "terraform",
+        "toml",
+        "tsx",
+        "typescript",
+        "vue",
+        "yaml",
+      },
+    },
+  },
+}
