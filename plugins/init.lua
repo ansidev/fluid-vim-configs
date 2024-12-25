@@ -94,7 +94,10 @@ local P = {
   {
     "nvim-neotest/neotest",
     dependencies = {
-      "nvim-neotest/neotest-go"
+      "nvim-neotest/nvim-nio",
+      "nvim-lua/plenary.nvim",
+      "antoinemadec/FixCursorHold.nvim",
+      "nvim-treesitter/nvim-treesitter"
     },
     event = "VimEnter",
     config = function()
