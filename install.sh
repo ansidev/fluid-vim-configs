@@ -7,3 +7,6 @@ brew install ansible-lint
 brew install stylelint
 brew install vale
 
+# Formatters
+brew install codespell
+brew install stylua
