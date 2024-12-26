@@ -18,8 +18,8 @@ return {
             },
           },
         },
-        tsserver = {},
-        bufls = {},
+        ts_ls = {},
+        buf_ls = {},
         -- yamlls = {
         --   settings = {
         --     yaml = {

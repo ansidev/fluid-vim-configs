@@ -1,5 +1,3 @@
-util = require "lspconfig/util"
-
 return {
   mode = "extend",
   options = {
@@ -7,7 +5,7 @@ return {
       ensure_installed = {
         "gopls",
         "yamlls",
-        "tsserver",
+        "ts_ls",
       },
     },
   },
