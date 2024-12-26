@@ -91,25 +91,7 @@ local P = {
       require("telescope").load_extension("conduct")
     end
   },
-  {
-    "nvim-neotest/neotest",
-    dependencies = {
-      "nvim-neotest/nvim-nio",
-      "nvim-lua/plenary.nvim",
-      "antoinemadec/FixCursorHold.nvim",
-      "nvim-treesitter/nvim-treesitter"
-    },
-    event = "VimEnter",
-    config = function()
-      plugin_fn.config_v2 {
-        fv_plugin_id = "neo_test",
-        plugin_module = "neotest",
-        hooks = {
-          user_after_setup = true,
-        }
-      }
-    end,
-  },
+  { "nvim-neotest/neotest-go" },
   {
     "yanskun/gotests.nvim",
     ft = "go",
