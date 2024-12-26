@@ -24,6 +24,7 @@ return {
         "typescript",
         "vue",
         "yaml",
+        "rust",
       },
     },
   },
