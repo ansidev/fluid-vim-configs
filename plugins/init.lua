@@ -5,46 +5,6 @@ local plugin_fn = require "functions.plugin"
 
 local P = {
   {
-    "folke/tokyonight.nvim",
-    event = "VeryLazy",
-    config = function()
-      local theme_configs = configs.tokyonight or {}
-      if settings.theme == "tokyonight" and settings.theme_variant ~= nil then
-        theme_configs.style = settings.theme_variant
-      end
-
-      plugin_fn.config_v2 {
-        fv_plugin_id = "tokyonight",
-        default_plugin_configs = theme_configs,
-      }
-    end,
-  },
-  {
-    "Shatur/neovim-ayu",
-    event = "VeryLazy",
-    config = function()
-      local theme_configs = configs.ayu or {}
-      if settings.theme == "ayu" and settings.theme_variant ~= nil then
-        theme_configs.style = settings.theme_variant
-      end
-
-      plugin_fn.config_v2 {
-        fv_plugin_id = "ayu",
-        default_plugin_configs = theme_configs,
-      }
-    end,
-  },
-  {
-    'Everblush/nvim',
-    name = 'everblush',
-    event = "VeryLazy",
-    config = function()
-      plugin_fn.config_v2 {
-        fv_plugin_id = "everblush",
-      }
-    end,
-  },
-  {
     "jcdickinson/codeium.nvim",
     event = "InsertEnter",
     dependencies = {
@@ -92,19 +52,6 @@ local P = {
     end
   },
   { "nvim-neotest/neotest-go" },
-  {
-    "yanskun/gotests.nvim",
-    ft = "go",
-    config = function()
-      plugin_fn.config_v2 {
-        fv_plugin_id = "go_tests",
-        plugin_module = "gotests",
-        hooks = {
-          user_after_setup = true,
-        }
-      }
-    end,
-  },
   {
     "mrjones2014/smart-splits.nvim",
     lazy = false,
