@@ -24,33 +24,6 @@ local P = {
       cmp.setup(config)
     end
   },
-  {
-    "aaditeynair/conduct.nvim",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "MunifTanjim/nui.nvim",
-    },
-    cmd = {
-      "ConductNewProject",
-      "ConductLoadProject",
-      "ConductLoadLastProject",
-      "ConductLoadProjectConfig",
-      "ConductReloadProjectConfig",
-      "ConductDeleteProject",
-      "ConductRenameProject",
-      "ConductProjectNewSession",
-      "ConductProjectLoadSession",
-      "ConductProjectDeleteSession",
-      "ConductProjectRenameSession",
-    },
-    mappings = user_mappings.load_conduct_mappings(),
-    config = function()
-      plugin_fn.config_v2 {
-        fv_plugin_id = "conduct",
-      }
-      require("telescope").load_extension("conduct")
-    end
-  },
   { "nvim-neotest/neotest-go" },
   {
     "mrjones2014/smart-splits.nvim",

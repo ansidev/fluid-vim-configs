@@ -1,32 +1,5 @@
 local M = {}
 
-function M.load_conduct_mappings()
-  return {
-    n = {
-      -- Project
-      { "<leader>p", group = "Project" },
-      {
-        "<leader>pa",
-        function()
-          local FvInput = require("ui.input")
-          local input = FvInput({
-            title = "Project name",
-            default_value = "",
-            on_submit = function(value)
-              vim.cmd("ConductNewProject " .. value)
-            end,
-          })
-
-          input:mount()
-        end,
-        desc = "Add project",
-      },
-      { "<leader>pd", "<Cmd>ConductDeleteProject<CR>", desc = "Delete the current project" },
-      { "<leader>pl", "<Cmd>Telescope conduct projects<CR>", desc = "List projects" },
-    }
-  }
-end
-
 local window_mappings = {
   { "<A-h>", "<Cmd>lua require('smart-splits').move_cursor_up()<CR>", desc = "Go to the up window" },
   { "<A-j>", "<Cmd>lua require('smart-splits').move_cursor_down()<CR>", desc = "Go to the down window" },
