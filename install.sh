@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+# Language Servers
+brew install lua-language-server
+
 # Linters
 brew install eslint_d
 brew install actionlint
@@ -10,3 +13,6 @@ brew install vale
 # Formatters
 brew install codespell
 brew install stylua
+
+# TodoComment dependency
+brew install ripgrep
