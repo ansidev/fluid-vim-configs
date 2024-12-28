@@ -22,14 +22,14 @@ return {
     builtin_configs = {
       debug = true,
       sources = {
-        null_ls.builtins.code_actions.eslint_d,
+        -- null_ls.builtins.code_actions.eslint_d,
         null_ls.builtins.code_actions.impl,
         null_ls.builtins.code_actions.gitsigns,
 
-        null_ls.builtins.diagnostics.actionlint,
-        null_ls.builtins.diagnostics.ansiblelint,
-        null_ls.builtins.diagnostics.eslint_d,
-        null_ls.builtins.diagnostics.stylelint,
+        -- null_ls.builtins.diagnostics.actionlint,
+        -- null_ls.builtins.diagnostics.ansiblelint,
+        -- null_ls.builtins.diagnostics.eslint_d,
+        -- null_ls.builtins.diagnostics.stylelint,
         null_ls.builtins.diagnostics.editorconfig_checker,
         -- null_ls.builtins.diagnostics.markdownlint_cli2,
         null_ls.builtins.diagnostics.golangci_lint,
@@ -57,7 +57,7 @@ return {
         -- null_ls.builtins.formatting.pg_format,
         -- null_ls.builtins.formatting.prettierd,
         -- null_ls.builtins.formatting.pg_format,
-        null_ls.builtins.formatting.stylelint,
+        -- null_ls.builtins.formatting.stylelint,
         -- null_ls.builtins.formatting.sqlfluff.with({
         --   extra_args = { "--dialect", "postgres" },
         -- }),
