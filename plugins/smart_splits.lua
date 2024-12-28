@@ -1,5 +1,3 @@
-local user_mappings = require "user.mappings"
-
 return {
   mode = "extend",
   options = {
@@ -28,9 +26,6 @@ return {
         },
       },
       at_edge = "wrap",
-    },
-    custom_configs = {
-      mappings = user_mappings.load_smart_splits_mappings(),
     },
   },
 }
