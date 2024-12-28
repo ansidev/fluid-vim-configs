@@ -1,6 +1,3 @@
-local configs = require "core.configs"
-local user_mappings = require "user.mappings"
-local settings = require "core.settings"
 local plugin_fn = require "functions.plugin"
 
 local P = {
@@ -28,13 +25,15 @@ local P = {
   {
     "mrjones2014/smart-splits.nvim",
     lazy = false,
-    mappings = user_mappings.load_smart_splits_mappings(),
     config = function()
       plugin_fn.config_v2 {
         fv_plugin_id = "smart_splits",
         plugin_module = "smart-splits",
+        hooks = {
+          user_setup = true,
+        },
       }
-    end
+    end,
   },
 }
 

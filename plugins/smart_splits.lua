@@ -1,31 +1,36 @@
+local user_mappings = require "user.mappings"
+
 return {
   mode = "extend",
   options = {
     builtin_configs = {
-      ignored_filetypes = {
+      ignored_buftypes = {
         "nofile",
         "quickfix",
         "prompt",
       },
-      ignored_buftypes = {
+      ignored_filetypes = {
         "NvimTree",
         "neo-tree",
       },
       resize_mode = {
-        quit_key = '<ESC>',
+        quit_key = "<ESC>",
         -- keys to use for moving in resize mode
         -- in order of left, down, up' right
         resize_keys = { "Left", "Down", "Up", "Right" },
         hooks = {
           on_enter = function()
-            vim.notify('Entering resize mode')
+            vim.notify "Entering resize mode"
           end,
           on_leave = function()
-            vim.notify('Exiting resize mode, bye')
+            vim.notify "Exiting resize mode, bye"
           end,
         },
       },
       at_edge = "wrap",
+    },
+    custom_configs = {
+      mappings = user_mappings.load_smart_splits_mappings(),
     },
   },
 }
