@@ -34,6 +34,10 @@ local P = {
       }
     end,
   },
+  {
+    "danilamihailov/beacon.nvim",
+    event = "VeryLazy",
+  },
 }
 
 return P
