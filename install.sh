@@ -13,6 +13,7 @@ brew install vale
 # Formatters
 brew install codespell
 brew install stylua
+brew install deno
 
 # TodoComment dependency
 brew install ripgrep
