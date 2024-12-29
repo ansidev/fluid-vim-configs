@@ -9,6 +9,7 @@ return {
         javascript = { "eslint_d", "deno_fmt" },
         typescript = { "eslint_d", "deno_fmt" },
         json = { "deno_fmt" },
+        markdown = { "deno_fmt" },
         ["*"] = { "codespell" },
       },
     },

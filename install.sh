@@ -8,7 +8,7 @@ brew install eslint_d
 brew install actionlint
 brew install ansible-lint
 brew install stylelint
-brew install vale
+brew install markdownlint-cli2
 
 # Formatters
 brew install codespell
