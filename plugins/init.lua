@@ -38,6 +38,16 @@ local P = {
     "danilamihailov/beacon.nvim",
     event = "VeryLazy",
   },
+  {
+    "ansidev/project.nvim",
+    event = "VeryLazy",
+    wk_mappings = user_mappings.project_nvim,
+    config = function()
+      plugin_fn.config_v2 {
+        fv_plugin_id = "project_nvim",
+      }
+    end,
+  },
 }
 
 return P

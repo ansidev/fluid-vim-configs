@@ -89,4 +89,9 @@ M.smart_splits = {
   },
 }
 
+M.project_nvim = {
+  -- Project
+  { "<leader>p", "<Cmd>Telescope projects<CR>", desc = "Open project" },
+}
+
 return M
