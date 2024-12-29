@@ -53,7 +53,16 @@ local P = {
     event = { "VeryLazy" },
     build = "deno task --quiet build:fast",
     config = function()
-      require("peek").setup()
+      require("peek").setup({
+        app = {
+          '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+          '--window-size=980,1440',
+          '--window-position=1580,0',
+          '--user-data-dir=/tmp/chrome-profile-$(date +%s)',
+          '--no-first-run',
+          '--disable-extensions',
+        },
+      })
       vim.api.nvim_create_user_command("PeekOpen", require("peek").open, {})
       vim.api.nvim_create_user_command("PeekClose", require("peek").close, {})
     end,
